@@ -16,6 +16,9 @@
 		FBA3FFE428ADBFA7004067B7 /* reproductor_de_musica_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3FFE328ADBFA7004067B7 /* reproductor_de_musica_iosTests.swift */; };
 		FBA3FFEE28ADBFA7004067B7 /* reproductor_de_musica_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3FFED28ADBFA7004067B7 /* reproductor_de_musica_iosUITests.swift */; };
 		FBA3FFF028ADBFA7004067B7 /* reproductor_de_musica_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3FFEF28ADBFA7004067B7 /* reproductor_de_musica_iosUITestsLaunchTests.swift */; };
+		FBA3FFFD28ADC357004067B7 /* WelcomePantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3FFFC28ADC357004067B7 /* WelcomePantallaView.swift */; };
+		FBA7DF7C28B3FEF200B2FD53 /* NewReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA7DF7B28B3FEF100B2FD53 /* NewReleaseView.swift */; };
+		FBA7DF7E28B3FF2600B2FD53 /* MusicasModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA7DF7D28B3FF2600B2FD53 /* MusicasModelo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		FBA3FFE928ADBFA7004067B7 /* reproductor_de_musica_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reproductor_de_musica_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA3FFED28ADBFA7004067B7 /* reproductor_de_musica_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reproductor_de_musica_iosUITests.swift; sourceTree = "<group>"; };
 		FBA3FFEF28ADBFA7004067B7 /* reproductor_de_musica_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reproductor_de_musica_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBA3FFFC28ADC357004067B7 /* WelcomePantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePantallaView.swift; sourceTree = "<group>"; };
+		FBA7DF7B28B3FEF100B2FD53 /* NewReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseView.swift; sourceTree = "<group>"; };
+		FBA7DF7D28B3FF2600B2FD53 /* MusicasModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicasModelo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				FBA3FFD628ADBFA6004067B7 /* Persistence.swift */,
 				FBA3FFD828ADBFA6004067B7 /* reproductor_de_musica_ios.xcdatamodeld */,
 				FBA3FFD328ADBFA6004067B7 /* Preview Content */,
+				FBA3FFFC28ADC357004067B7 /* WelcomePantallaView.swift */,
+				FBA7DF7B28B3FEF100B2FD53 /* NewReleaseView.swift */,
+				FBA7DF7D28B3FF2600B2FD53 /* MusicasModelo.swift */,
 			);
 			path = reproductor_de_musica_ios;
 			sourceTree = "<group>";
@@ -265,6 +274,9 @@
 			files = (
 				FBA3FFD728ADBFA6004067B7 /* Persistence.swift in Sources */,
 				FBA3FFD028ADBFA4004067B7 /* ContentView.swift in Sources */,
+				FBA7DF7E28B3FF2600B2FD53 /* MusicasModelo.swift in Sources */,
+				FBA3FFFD28ADC357004067B7 /* WelcomePantallaView.swift in Sources */,
+				FBA7DF7C28B3FEF200B2FD53 /* NewReleaseView.swift in Sources */,
 				FBA3FFDA28ADBFA6004067B7 /* reproductor_de_musica_ios.xcdatamodeld in Sources */,
 				FBA3FFCE28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift in Sources */,
 			);
