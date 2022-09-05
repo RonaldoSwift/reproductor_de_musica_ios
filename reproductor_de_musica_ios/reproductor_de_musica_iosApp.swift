@@ -13,7 +13,7 @@ struct reproductor_de_musica_iosApp: App {
 
     var body: some Scene {
         WindowGroup {
-            WelcomePantallaView()
+            NewReleaseView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

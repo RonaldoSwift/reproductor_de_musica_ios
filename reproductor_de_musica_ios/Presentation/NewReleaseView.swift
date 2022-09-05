@@ -54,58 +54,66 @@ struct NewReleaseView: View {
     ]
     
     var body: some View {
-        VStack{
-            VStack{
-                HStack{
-                    Spacer()
-                    Image("Option")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 26, height: 26, alignment: .center)
-                }
-                Spacer()
-                
-                Text("New Release")
-                Text("ALBUM")
-                ScrollView{
-                    ForEach( musicaModelos, id: \.id) { musicaModelo in
-                        PrimerScroll(image: musicaModelo.image,
-                                     titulo: musicaModelo.titulo,
-                                     subTitulo: musicaModelo.subTitulo,
-                                     love: musicaModelo.love,
-                                     puntos: musicaModelo.puntos)
-                    }
-                }
-            }
-            .padding()
+        
+        NavigationView {
             
-            ZStack{
-                HStack{
-                    Image("MotherSong")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 58, height: 58, alignment: .center)
-                        .cornerRadius(10)
-                    VStack(alignment: .leading){
-                        Text("Mother Song")
-                        Text("VALIMAI")
+            VStack{
+                VStack{
+                    HStack{
+                        Spacer()
+                        Image("Option")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 26, height: 26, alignment: .center)
                     }
-                    Image(systemName: "pause.circle.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 39, height: 39)
-                        .padding(EdgeInsets.init(top: 0, leading: 150, bottom: 0, trailing: 0))
+                    
+                    Text("New Release")
+                    Text("ALBUM")
+                    ScrollView{
+                        ForEach( musicaModelos, id: \.id) { musicaModelo in
+                            NavigationLink(destination: MusicaDetalleView(
+                                musicaModelo: musicaModelo
+                            )) {
+                                MusicaCell(image: musicaModelo.image,
+                                             titulo: musicaModelo.titulo,
+                                             subTitulo: musicaModelo.subTitulo,
+                                             love: musicaModelo.love,
+                                             puntos: musicaModelo.puntos)
+                            }
+                        }
+                    }
                 }
-                .foregroundColor(Color.white)
+                .padding()
+                
+                ZStack{
+                    HStack{
+                        Image("MotherSong")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 58, height: 58, alignment: .center)
+                            .cornerRadius(10)
+                        VStack(alignment: .leading){
+                            Text("Mother Song")
+                            Text("VALIMAI")
+                        }
+                        Image(systemName: "pause.circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 39, height: 39)
+                            .padding(EdgeInsets.init(top: 0, leading: 150, bottom: 0, trailing: 0))
+                    }
+                    .foregroundColor(Color.white)
+                }
+                .frame(minWidth: 0, idealWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 0, maxHeight: .infinity, alignment: .center)
+                .background(Color.black)
+                .frame(width: 420, height: 100, alignment: .center)
+                
             }
-            .frame(minWidth: 0, idealWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 0, maxHeight: .infinity, alignment: .center)
-            .background(Color.black)
-            .frame(width: 420, height: 100, alignment: .center)
             
         }
     }
     
-    public func PrimerScroll(image: String, titulo: String, subTitulo: String, love: String, puntos: String) -> some View{
+    public func MusicaCell(image: String, titulo: String, subTitulo: String, love: String, puntos: String) -> some View{
         return HStack{
             Image(image)
                 .resizable()
