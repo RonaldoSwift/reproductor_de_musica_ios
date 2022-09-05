@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B1E3F8528C6A31900EBF1CB /* reproductor-de-musica-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "reproductor-de-musica-ios-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FBA3FFCA28ADBFA4004067B7 /* reproductor_de_musica_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reproductor_de_musica_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA3FFCD28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reproductor_de_musica_iosApp.swift; sourceTree = "<group>"; };
 		FBA3FFCF28ADBFA4004067B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		FBA3FFCC28ADBFA4004067B7 /* reproductor_de_musica_ios */ = {
 			isa = PBXGroup;
 			children = (
+				2B1E3F8528C6A31900EBF1CB /* reproductor-de-musica-ios-Info.plist */,
 				FBA3FFCD28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift */,
 				FBA3FFCF28ADBFA4004067B7 /* ContentView.swift */,
 				FBA3FFD128ADBFA6004067B7 /* Assets.xcassets */,
@@ -441,9 +443,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"reproductor_de_musica_ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "reproductor-de-musica-ios-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,9 +471,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"reproductor_de_musica_ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "reproductor-de-musica-ios-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
