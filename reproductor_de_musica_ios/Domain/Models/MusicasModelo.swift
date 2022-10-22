@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct MusicaModelo: Identifiable{
-    let id: Int
+    let id: UUID
     let image: String
     let titulo: String
     let subTitulo: String

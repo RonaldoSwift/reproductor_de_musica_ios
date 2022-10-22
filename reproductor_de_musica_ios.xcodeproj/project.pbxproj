@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1C51CC29005E2300C00038 /* MusicaCoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C51CB29005E2300C00038 /* MusicaCoreDataSource.swift */; };
 		2B1E3F8728C6AB1400EBF1CB /* MusicaDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E3F8628C6AB1400EBF1CB /* MusicaDetalleView.swift */; };
 		2B1E3F8928C6AC7000EBF1CB /* MusicaDetalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E3F8828C6AC7000EBF1CB /* MusicaDetalleViewModel.swift */; };
+		2B95D5FE2900F363003F3650 /* MusicaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D5FD2900F363003F3650 /* MusicaError.swift */; };
+		2B95D6002900F3B1003F3650 /* MusicaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D5FF2900F3B1003F3650 /* MusicaRepository.swift */; };
 		FBA3FFCE28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3FFCD28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift */; };
 		FBA3FFD028ADBFA4004067B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3FFCF28ADBFA4004067B7 /* ContentView.swift */; };
 		FBA3FFD228ADBFA6004067B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA3FFD128ADBFA6004067B7 /* Assets.xcassets */; };
@@ -40,9 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B1C51CB29005E2300C00038 /* MusicaCoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaCoreDataSource.swift; sourceTree = "<group>"; };
 		2B1E3F8528C6A31900EBF1CB /* reproductor-de-musica-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "reproductor-de-musica-ios-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2B1E3F8628C6AB1400EBF1CB /* MusicaDetalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaDetalleView.swift; sourceTree = "<group>"; };
 		2B1E3F8828C6AC7000EBF1CB /* MusicaDetalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaDetalleViewModel.swift; sourceTree = "<group>"; };
+		2B95D5FD2900F363003F3650 /* MusicaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaError.swift; sourceTree = "<group>"; };
+		2B95D5FF2900F3B1003F3650 /* MusicaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaRepository.swift; sourceTree = "<group>"; };
 		FBA3FFCA28ADBFA4004067B7 /* reproductor_de_musica_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reproductor_de_musica_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA3FFCD28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reproductor_de_musica_iosApp.swift; sourceTree = "<group>"; };
 		FBA3FFCF28ADBFA4004067B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +90,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1C51CA29005E0700C00038 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2B1C51CD29005F0F00C00038 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2B1C51CD29005F0F00C00038 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2B1C51CB29005E2300C00038 /* MusicaCoreDataSource.swift */,
+				2B1C51CE29005F2C00C00038 /* CoreData */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2B1C51CE29005F2C00C00038 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FBA3FFD828ADBFA6004067B7 /* reproductor_de_musica_ios.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		2B1E3F8A28C6B52000EBF1CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +129,9 @@
 		2B1E3F8B28C6B53500EBF1CB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				FBA7DF7D28B3FF2600B2FD53 /* MusicasModelo.swift */,
+				2B95D6032900F69F003F3650 /* Repositories */,
+				2B95D6022900F694003F3650 /* Error */,
+				2B95D6012900F688003F3650 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -109,6 +142,30 @@
 				FBA3FFD128ADBFA6004067B7 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B95D6012900F688003F3650 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7DF7D28B3FF2600B2FD53 /* MusicasModelo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B95D6022900F694003F3650 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				2B95D5FD2900F363003F3650 /* MusicaError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		2B95D6032900F69F003F3650 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2B95D5FF2900F3B1003F3650 /* MusicaRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		FBA3FFC128ADBFA3004067B7 = {
@@ -134,13 +191,13 @@
 		FBA3FFCC28ADBFA4004067B7 /* reproductor_de_musica_ios */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E3F8C28C6B55500EBF1CB /* Resources */,
-				2B1E3F8B28C6B53500EBF1CB /* Domain */,
 				2B1E3F8A28C6B52000EBF1CB /* Presentation */,
+				2B1E3F8B28C6B53500EBF1CB /* Domain */,
+				2B1C51CA29005E0700C00038 /* Data */,
+				2B1E3F8C28C6B55500EBF1CB /* Resources */,
 				2B1E3F8528C6A31900EBF1CB /* reproductor-de-musica-ios-Info.plist */,
 				FBA3FFCD28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift */,
 				FBA3FFD628ADBFA6004067B7 /* Persistence.swift */,
-				FBA3FFD828ADBFA6004067B7 /* reproductor_de_musica_ios.xcdatamodeld */,
 				FBA3FFD328ADBFA6004067B7 /* Preview Content */,
 			);
 			path = reproductor_de_musica_ios;
@@ -303,9 +360,12 @@
 			files = (
 				2B1E3F8928C6AC7000EBF1CB /* MusicaDetalleViewModel.swift in Sources */,
 				FBA3FFD728ADBFA6004067B7 /* Persistence.swift in Sources */,
+				2B1C51CC29005E2300C00038 /* MusicaCoreDataSource.swift in Sources */,
 				FBA3FFD028ADBFA4004067B7 /* ContentView.swift in Sources */,
+				2B95D6002900F3B1003F3650 /* MusicaRepository.swift in Sources */,
 				FBA7DF7E28B3FF2600B2FD53 /* MusicasModelo.swift in Sources */,
 				FBA7DF7C28B3FEF200B2FD53 /* NewReleaseView.swift in Sources */,
+				2B95D5FE2900F363003F3650 /* MusicaError.swift in Sources */,
 				FBA3FFDA28ADBFA6004067B7 /* reproductor_de_musica_ios.xcdatamodeld in Sources */,
 				2B1E3F8728C6AB1400EBF1CB /* MusicaDetalleView.swift in Sources */,
 				FBA3FFCE28ADBFA4004067B7 /* reproductor_de_musica_iosApp.swift in Sources */,

@@ -23,6 +23,16 @@ struct MusicaDetalleView: View {
             Button("Pause") {
                 musicaDetalleViewModel.pauseMusic()
             }
+            Button("Guardar en base de datos") {
+                Task {
+                    await musicaDetalleViewModel.guardarEnBaseDeDatos()
+                }
+            }
+            Button("Obtener musicas desde base de datos") {
+                Task {
+                    await musicaDetalleViewModel.obtenerUsuariosDeBaseDeDatos()
+                }
+            }
         }
     
     }
@@ -31,7 +41,7 @@ struct MusicaDetalleView: View {
 struct MusicaDetalleView_Previews: PreviewProvider {
     static var previews: some View {
         MusicaDetalleView(
-            musicaModelo: MusicaModelo(id: 0, image: "", titulo: "", subTitulo: "", love: "", puntos: "")
+            musicaModelo: MusicaModelo(id: UUID(), image: "", titulo: "", subTitulo: "", love: "", puntos: "")
         )
     }
 }
